@@ -121,27 +121,27 @@ Handles:
 
 ### 🧭 Frontend Routes Overview
 
-**Route**   	**Description**
+| Route        | Description                  |
+|---------------|------------------------------|
+| `/`           | Home / Marketplace           |
+| `/login`      | Login Page                   |
+| `/register`   | Register Page                |
+| `/myevents`   | User’s Events                |
+| `/swaps`      | Swap Requests (incoming/outgoing) |
 
-```
-/             	Home / Marketplace
-/login        	Login Page
-/register     	Register Page
-/myevents	      User’s Events
-/swaps	        Swap Requests (incoming/outgoing)
-```
+---
 
 ### 🧰 Backend API Endpoints
-**Method**	  **Endpoint**	            **Description**
-```
-POST	        /api/users/register	      Register new user
-POST	        /api/users/login	        Login existing user
-GET	          /api/events/me	          Fetch user’s events
-POST	        /api/events	              Create new event
-GET	          /api/events/swappable	    Fetch swappable events
-POST	        /api/swaps/request        Request a swap
-POST	        /api/swaps/:id/respond	  Accept or reject swap
-```
+
+| Method | Endpoint                | Description                |
+|---------|--------------------------|-----------------------------|
+| POST    | `/api/users/register`    | Register new user           |
+| POST    | `/api/users/login`       | Login existing user         |
+| GET     | `/api/events/me`         | Fetch user’s events         |
+| POST    | `/api/events`            | Create new event            |
+| GET     | `/api/events/swappable`  | Fetch swappable events      |
+| POST    | `/api/swaps/request`     | Request a swap              |
+| POST    | `/api/swaps/:id/respond` | Accept or reject swap       |
 
 ### 👩‍💻 Contributing
 
