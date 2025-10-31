@@ -22,28 +22,29 @@ It includes secure authentication, an interactive marketplace, and responsive UI
 ---
 
 ## 📂 Folder Structure
-
+```
 project-root/
 │
-├── frontend/ # React + Vite app
+├── frontend/          # React + Vite app
 │ ├── src/
-│ │ ├── components/ # Reusable UI components
-│ │ ├── context/ # AppContext.js (Global state)
-│ │ ├── pages/ # Pages like Login, Register, Marketplace
-│ │ ├── utils/ # API helpers (api.js)
-│ │ └── main.jsx # Entry point
+│ │ ├── components/    # Reusable UI components
+│ │ ├── context/       # AppContext.js (Global state)
+│ │ ├── pages/         # Pages like Login, Register, Marketplace
+│ │ ├── utils/         # API helpers (api.js)
+│ │ └── main.jsx       # Entry point
 │ ├── package.json
 │ └── vite.config.js
 │
-├── backend/ # Express backend
-│ ├── controllers/ # Request handlers
-│ ├── models/ # MongoDB models
-│ ├── routes/ # API routes
-│ ├── middleware/ # Auth middleware (JWT)
-│ ├── server.js # Entry point
+├── backend/           # Express backend
+│ ├── controllers/     # Request handlers
+│ ├── models/          # MongoDB models
+│ ├── routes/          # API routes
+│ ├── middleware/      # Auth middleware (JWT)
+│ ├── server.js        # Entry point
 │ └── .env
 │
 └── README.md
+```
 
 ## ⚙️ Setup Instructions
 
@@ -119,15 +120,20 @@ Handles:
 - ⚡ Fast setup with Vite + React Context API
 
 ### 🧭 Frontend Routes Overview
+
 **Route**   	**Description**
+
+```
 /             	Home / Marketplace
 /login        	Login Page
 /register     	Register Page
 /myevents	      User’s Events
 /swaps	        Swap Requests (incoming/outgoing)
+```
 
 ### 🧰 Backend API Endpoints
 **Method**	  **Endpoint**	            **Description**
+```
 POST	        /api/users/register	      Register new user
 POST	        /api/users/login	        Login existing user
 GET	          /api/events/me	          Fetch user’s events
@@ -135,6 +141,7 @@ POST	        /api/events	              Create new event
 GET	          /api/events/swappable	    Fetch swappable events
 POST	        /api/swaps/request        Request a swap
 POST	        /api/swaps/:id/respond	  Accept or reject swap
+```
 
 ### 👩‍💻 Contributing
 
